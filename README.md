@@ -2,9 +2,9 @@
 
 Projeto Web de uma plataforma de estudos do Front-end ao Back-end
 
-Tecnologias usadas:
-HTML
-CSS
-Java Script
-GIT
-SQLITE
+<h1>Tecnologias usadas:<h1><br>
+HTML<br>
+CSS<br>
+Java Script<br>
+GIT<br>
+SQLITE<br>
