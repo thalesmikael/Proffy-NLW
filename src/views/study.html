@@ -31,7 +31,7 @@
                     <div class="select-block">
                         <label for="subject">Matéria: </label>
                         <select name="subject" id="subject">
-                            <option value="">Selecione uma matéria</option>
+                            <option value="" disabled="" hidden="">Selecione uma matéria</option>
 
                             {%for subject in subjects %}
                                 <option value="{{loop.index}}" {{ "selected" if filters.subject == loop.index }}>{{subject}}</option>
@@ -61,6 +61,12 @@
 
         <main>
 
+            {% if proffys == "" %}
+                            
+            <p class="no-results">Nenhum professor encontrado com a sua pesquisa</p>
+                            
+            {% else %}
+
             {%for proffy in proffys%}
             <article class="teacher-item">
                 <header>
@@ -82,6 +88,7 @@
             </article>
             {%endfor%}
 
+            {% endif %}
 
             
         </main>
